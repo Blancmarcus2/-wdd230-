@@ -28,3 +28,8 @@ h1 {
     color: white;
     text-align: center;
 }
+
+footer {
+    background-color: cyan;
+    padding: 1.5rem;
+}
