@@ -30,12 +30,12 @@ header img {
 
 h1 {
     font-size: 2.4rem;
-    color: darkgoldenrod;
+    color: red;
     text-align: center;
 }
 
 #currentdate {
-    color: darkgoldenrod;
+    color: red;
 }
 
 footer {
