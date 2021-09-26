@@ -1,0 +1,40 @@
+/* medium media query with a two column lay out */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  #container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 15px;
+      padding: 1em; 
+     
+     
+  }
+
+  #first-paragraph {
+      grid-column: 1/2;
+      margin-top: 0;
+  }
+  
+  #second-paragraph {
+      grid-column: 2/3;
+  }
+  
+#third-paragraph {
+  grid-column: 1/ span 3;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+  img {
+      width: 100%;
+  }
+
+  header {
+      line-height: 20px;
+  }
+
+  footer {
+      line-height: 5px;
+  }
+
+}

@@ -1,0 +1,96 @@
+/* one column grid lay out */
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+header, footer{
+  background-color: cyan;
+  text-align: center;   
+}
+
+header {
+  line-height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  color: red;
+  font-family: "Scheherazade New", serif;
+
+}
+
+h2 {
+  font-size: 25px;
+}
+
+footer {
+  font-family: "Scheherazade New", serif;
+  line-height: 20px;
+  margin-bottom: 40px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 15px;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10px;
+}
+
+#container h2 {
+  margin-top: 0;
+  background-color: cyan;
+  padding: 7px 5px 7px 7px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: normal;
+
+}
+
+.description {
+  padding: 10px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  
+}
+
+#container a{
+  padding: 0 0 0 10px;
+
+}
+
+.site-name {
+    font-size: 18px;;
+    padding: 5px 0 5px 10px;
+}
+
+#first-paragraph {
+  background-color: aliceblue;
+  border-radius: 5px;
+  border-style: ridge;
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#second-paragraph {
+  background-color: aliceblue;
+  border-radius: 5px;
+  border-style: ridge;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#third-paragraph {
+  background-color: aliceblue;
+  border-radius: 5px;
+  border-style: ridge;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#container {
+  font-family: "Architects Daughter", cursive;
+}

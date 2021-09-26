@@ -1,2 +1,2 @@
-document.querySelector("#copyrightyear").textContent = new Date().getFullYear();
+// uses getElementById to pull last modified date and time
 document.querySelector("#lastupdated").textContent = `Last Updated: ${document.lastModified}`;

@@ -1,0 +1,56 @@
+body {
+    font-size: 16pt;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', Arial, Helvetica, serif;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: cyan;
+    box-shadow: 0 0 2rem cyan(0, 0%, 47%);
+}
+
+header {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header img {
+    width: 300px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: red;
+    text-shadow: 0.5rem 0.5rem 2rem red(0, 0%, 10%);
+}
+
+h2 {
+    margin-left: 0.5rem;
+}
+
+main ul {
+    margin-left: 1rem;
+    list-style: none;
+}
+
+main ul li {
+    margin: 0.5rem;
+}
+
+main ul li::before {
+    content: '';
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+}
