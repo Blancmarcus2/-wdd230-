@@ -6,8 +6,6 @@
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 15px;
       padding: 1em; 
-     
-     
   }
 
   #first-paragraph {
@@ -36,5 +34,4 @@
   footer {
       line-height: 5px;
   }
-
 }

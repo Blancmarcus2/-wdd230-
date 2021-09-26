@@ -17,7 +17,6 @@ header {
   margin-top: 40px;
   color: red;
   font-family: "Scheherazade New", serif;
-
 }
 
 h2 {
@@ -31,11 +30,17 @@ footer {
   padding-top: 1px;
   padding-bottom: 1px;
   font-size: 15px;
+  color: red;
+}
+
+footer a {
+  color:black ;
+  font-family: "Architects Daughter" sans-serif;
 }
 
 img {
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 2rem cyan(0, 0%, 47%);
   margin-top: 10px;
 }
 
@@ -67,7 +72,7 @@ img {
 }
 
 #first-paragraph {
-  background-color: aliceblue;
+  background-color: lightskyblue;
   border-radius: 5px;
   border-style: ridge;
   padding: 5px;
@@ -76,7 +81,7 @@ img {
 }
 
 #second-paragraph {
-  background-color: aliceblue;
+  background-color: lightskyblue;
   border-radius: 5px;
   border-style: ridge;
   padding: 5px;
@@ -84,7 +89,7 @@ img {
 }
 
 #third-paragraph {
-  background-color: aliceblue;
+  background-color: lightskyblue;
   border-radius: 5px;
   border-style: ridge;
   padding: 5px;
@@ -92,5 +97,5 @@ img {
 }
 
 #container {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Cormorant Garamond", sans-serif;
 }
