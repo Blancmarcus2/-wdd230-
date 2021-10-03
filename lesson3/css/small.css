@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #0AEFFF;
+  --secondary-color: #FFF01F;
+  --accent1-color: #B2E6E4;
+  --accent2-color: #B7BBD4;
+}
+
+/*small view - styles start here and progress to larger viewports*/
+body {
+    max-width: 960px;
+    text-align: center;
+    margin: auto;
+    background-color: #B2E6E4;
+    font-family: "New Tegomin", sans-serif;
+    font-size: 15px;
+  }
+  header, footer {
+    font-family: "New Tegomin", sans-serif;
+    background-color: #0AEFFF;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav ul li a {
+    display: block;
+    background-color: #3e54b8;
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+    border: solid;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "New Tegomin", sans-serif;
+  }
+  a:hover {
+    background-color: #B7BBD4;
+    color: white;
+  }
+
+  p {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+
+  /*css specific to index.html*/
+  #domain {
+    font-weight: bold;
+  }
+  /*css specific to color-scheme.html*/
+  
+  .colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .colors td{
+    border: 1px solid black;
+    padding: 5px;
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: var(--primary-color);
+  }
+  .secondary {
+    background-color: var(--secondary-color);
+  }
+  .accent1 {
+    background-color: var(--accent1-color);
+  }
+  .accent2{
+    background-color: var(--accent2-color);
+  }
+  p.colored {
+    background-color: var(--text-background-color);
+    color: var(--paragraph-color-on-color);
+  }
+ 
+  /*css specific to typography.html*/
+  .typo tr td {
+    border: 1px solid black;
+    padding: 5px;
+    width: 25%;
+    height: 3em;
+    text-align: center;
+  }
+
+  .font {
+    font-family: "New Tegomin", sans-serif;
+  }
+
+  .sample {
+    background-color: #0AEFFF;
+  }
+
+  .size {
+    font-size: 40px;
+  }

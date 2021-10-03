@@ -1,0 +1,32 @@
+/*medium view*/
+@media only screen and (min-width: 32.5em) {
+    body {
+      font-size: 14pt;
+    }
+    nav ul {
+      display: flex;
+    }
+    nav ul li {
+      flex: 1 1 100%;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    nav ul li a {
+      font-size: 1.25rem;
+    }
+    footer {
+      font-size: 12pt;
+    }
+    .logo-header {
+      float: right;
+      padding-right: 0.75%;
+    }
+    .logo {
+      max-width: 4rem;
+    }
+    .logo-credit {
+      font-size: 7pt;
+      text-align: center;
+    }
+  }  
