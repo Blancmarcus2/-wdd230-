@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em) {
+    header {
+        text-align: center;
+    }
+    nav ul, nav ul.navigation {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    nav button {
+        display: none;
+    }
+      footer {
+        text-align: center;
+    }
+}

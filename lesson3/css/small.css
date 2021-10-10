@@ -1,8 +1,8 @@
 :root {
   --primary-color: #0AEFFF;
-  --secondary-color: #FFF01F;
-  --accent1-color: #B2E6E4;
-  --accent2-color: #B7BBD4;
+  --secondary-color: #f5f5dc;
+  --accent1-color: #000000;
+  --accent2-color: #ffffff;
 }
 
 /*small view - styles start here and progress to larger viewports*/
@@ -11,24 +11,26 @@ body {
     text-align: center;
     margin: auto;
     background-color: #B2E6E4;
-    font-family: "New Tegomin", sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 15px;
-  }
-  header, footer {
-    font-family: "New Tegomin", sans-serif;
-    background-color: #0AEFFF;
-    color: black;
-    padding: 5px;
-    text-align: center;
-    border-radius: 15px;
-  }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  nav ul li a {
+}
+header {
+  font-family: 'Tangerine', cursive;
+  background-color: #0AEFFF;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 40px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li a {
     display: block;
     background-color: #3e54b8;
     color: white;
@@ -38,85 +40,138 @@ body {
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
-  }
-  h1,
-  h2,
-  h3 {
-    font-family: "New Tegomin", sans-serif;
-  }
-  a:hover {
-    background-color: #B7BBD4;
-    color: white;
-  }
+}
+h1 {
+  font-family: 'Tangerine', cursive;
+}
+h2 {
+  font-family: 'Inconsolata', monospace;
+}
+h3 {
+  font-family: 'Inconsolata', monospace;
+}
+a:hover {
+  background-color: #B7BBD4;
+  color: #ffffff;
+}
 
-  p {
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+p {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Cormorant Garamond', serif;
+}
 
-  .logo {
-    max-width: 100%;
-  }
+.logo {
+  max-width: 100%;
+}
 
-  /*css specific to index.html*/
-  #domain {
-    font-weight: bold;
-  }
-  /*css specific to color-scheme.html*/
+/*css specific to index.html*/
+#domain {
+  font-weight: bold;
+}
   
-  .colors {
-    width: 100%;
-    min-width: 350px;
-    margin: auto;
-    text-align: center;
-  }
-  .colors th {
-    background-color: #999;
-    border: 1px solid black;
-    padding: 5px;
-  }
-  .colors td{
-    border: 1px solid black;
-    padding: 5px;
-    width: 25%;
-    height: 3em;
-  }
+/*css specific to color-scheme.html*/
   
-  .primary {
-    background-color: var(--primary-color);
-  }
-  .secondary {
-    background-color: var(--secondary-color);
-  }
-  .accent1 {
-    background-color: var(--accent1-color);
-  }
-  .accent2{
-    background-color: var(--accent2-color);
-  }
-  p.colored {
-    background-color: var(--text-background-color);
-    color: var(--paragraph-color-on-color);
-  }
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+  border: 1px solid black;
+  padding: 5px;
+}
+.colors td{
+  border: 1px solid black;
+  color: #ff0000;
+  padding: 5px;
+  width: 25%;
+  height: 3em;
+}
+  
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+p.colored {
+  background-color: var(--text-background-color);
+  color: var(--paragraph-color-on-color);
+}
  
-  /*css specific to typography.html*/
-  .typo tr td {
-    border: 1px solid black;
-    padding: 5px;
-    width: 25%;
-    height: 3em;
-    text-align: center;
-  }
+/*css specific to typography.html*/
+.typo tr td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 25%;
+  height: 3em;
+  text-align: center;
+}
 
-  .font {
-    font-family: "New Tegomin", sans-serif;
-  }
+.font-header {
+  font-family: 'Tangerine', cursive;
+}
+.font-navigation {
+  font-family: 'Inconsolata', monospace;
+}
+.font-footer {
+  font-family: 'Inconsolata', monospace;
+}
+.font-h1 {
+  font-family: 'Tangerine', cursive;
+}
+.font-h2 {
+  font-family: 'Inconsolata', monospace;
+}
+.font-h3 {
+  font-family: 'Inconsolata', monospace;
+}
+.font-paragraph {
+  font-family: 'Cormorant Garamond', serif;
+}
 
-  .sample {
-    background-color: #0AEFFF;
-  }
+.sample {
+  background-color: #0AEFFF;
+}
 
-  .size {
-    font-size: 40px;
-  }
+.size-header {
+  font-size: 30px;
+}
+.size-navigation {
+  font-size: 20px;
+}
+.size-footer {
+  font-size: 15px;
+}
+.size-h1 {
+  font-size: 25px;
+}
+.size-h2 {
+  font-size: 20px;
+}
+.size-h3 {
+  font-size: 15px;
+}
+.size-paragraph {
+  font-size: 13px;
+}
+
+footer {
+  font-family: 'Inconsolata', monospace;
+  background-color: #0AEFFF;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 15px;
+}

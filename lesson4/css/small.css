@@ -1,0 +1,143 @@
+main {
+    font-family: New Tegomin, sans-serif;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+    background-color: #f5f5dc;
+}
+
+header {
+    max-width: 100%;
+    background-color: cyan;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100px;   
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-family: "Inconsolata", monospace;
+    font-size: 25px;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.moto {
+    font-family:"tangerine", cursive;
+    font-style: italic;
+    color: forestgreen;
+    margin-left: 20px;
+    font-size: .9rem;
+    text-align: center;
+}
+
+/* Small/Phone View ***************/
+button {
+    background-color:#000;
+    color: aliceblue;
+    font-size: 1rem;
+    font-family:'Asul', sans-serif;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+    font-size: 1rem;
+	background-color: cyan;
+    text-shadow: 10px 5px 5px black;
+    text-align: center;
+    box-shadow: 10px 5px 5px white;
+}
+nav button {
+    margin: 0.5rem 5%;
+    font-size: 1rem;
+    background-color:#00ffff;
+    color:#000;
+    border: none;
+}
+.navigation{
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+	display: block;
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav ul.navigation {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+.navigation {
+	display: flex;
+	}
+
+nav a {
+	text-align: center;
+	}
+
+p {
+    font-size: 13px;
+    font-family: "Cormorant Garamond", serif;
+    color:#000;
+    font-size: 1rem;
+    text-align: center;
+    }
+a {
+    color:#000;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;   
+    }
+    
+h2 {
+    font-size: 20px;
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+}
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: aliceblue;
+    color: #444;
+    font-style: italic;
+}
+
+footer {
+    font-size: 15px;
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+    background-color: cyan;
+    padding: 5px;
+}

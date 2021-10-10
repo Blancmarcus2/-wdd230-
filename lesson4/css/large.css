@@ -1,0 +1,25 @@
+@media only screen and (min-width: 64em) {
+  main, footer {
+      margin: auto;
+      max-width: 960px;
+  }
+  nav {
+      max-width: 100%;
+  }
+  header {
+      max-width: 100%;
+      justify-items: center;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+  }
+  nav ul {
+      display: flex;
+  }
+  nav ul li {
+      flex: 1 1 100%;
+  }
+  footer {
+    text-align: center;
+  }
+}
