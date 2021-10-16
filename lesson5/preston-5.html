@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,13 +21,14 @@
        <section class="headings">
            <h1>Forecasting Website</h1>
            <div class="moto">There is no better place than Preston</div>
+           <div id="banner">Saturday = </div>
        </section>
     </header>
     <nav>
         <button onclick="toggleMenu()"> &#9776; Menu</button>
         <ul id ="menu" class="navigation">
             <li><a href="../index.html">Home</a></li>
-            <li class="active"><a href="lesson4/preston-4.html" target="_blank">Preston</a></li>
+            <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -36,17 +37,86 @@
     </nav>
     <main>
         <h2>Preston Idaho</h2>
-        <div class="contentbox">Hero Image / Weather Summary</div>
-        <div class="contentbox forecast">5 Day Forecast</div>
-        <div class="contentbox">Article</div>
-        <div class="contentbox">Contact Information</div>
+        <div class="contentbox-hero">
+        <div class="contentbox-hero-img"><img src="images/prestonlancashire.jpeg" alt="Hero Image / Weather Summary"></div>
+            <section class="action">
+                <h3>
+                    Weather Summary
+                </h3>
+                <p>Currently: <span class="chill">Sunny</span></p>
+                <p>High: <span class="chill">54º F</span></p>
+                <p>Wind Chill: <span class="chill">ºF</span></p>
+                <p>Humidity: <span class="chill">68%</span></p>
+                <p>Wind Speed: <span class="chill">5 mph</span></p>
+            </section>>
+            </div>
+        <h3>5 Day Forecast</h3>
+        <div class="contentbox-forecast">
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head">Mon</span>
+                    <img class="img" src="images/day_forecast_sun_sunny_weather_icon.png" alt="Sun">
+                    <span class="data">29º F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Tue</span>
+                    <img class="img" src="images/day_forecast_sun_sunny_weather_icon.png" alt="Sun">
+                    <span class="data">26º F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Wed</span>
+                    <img class="img" src="images/day_forecast_sun_sunny_weather_icon.png" alt="Sun">
+                    <span class="data">30º F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Thu</span>
+                    <img class="img" src="images/day_forecast_sun_sunny_weather_icon.png" alt="Sun">
+                    <span class="data">32º F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Fri</span>
+                    <img class="img" src="images/day_forecast_sun_sunny_weather_icon.png" alt="Sun">
+                    <span class="data">36º F</span>
+                </div>
+            </div>
+            </div>
+        <div class="contentbox-article">
+            <img class="img-article" src="images/0jqhf6_0cRCu5CW00.webp" alt="Flags">
+        <h2 class="h2-article">Flags left as ‘thank you gift’ for medical workers</h2>
+        <p class="p-article">OGDEN – Jill Gebert planted 200 American flags
+            around Ogden Regional Medical Center on Wednesday
+            to thank medical workers she credits with saving
+            her mother’s life from COVID-19. On Sept. 4, Gebert’s mother,
+            Marie Bosworth, started experiencing heart palpitations and coughing.
+            She was sent to Logan Regional Medical Center and was monitored
+            for six hours before being sent home with instructions to return
+            if she felt worse.
+        </p>   
+        </div>
     </main>
     <footer>
+        <div class="contentbox-contact">
+            <a href="https://www.google.com/search?q=preston+idaho+google+maps&rlz=1C5CHFA_enHT955HT955&oq=preston+idaho+map&aqs=chrome.1.69i57j0i19i22i30l3.22818j0j7&sourceid=chrome&ie=UTF-8#" target="_blank">
+                <img class="img-contact" src="images/preston_map.png" alt="preston_map"></a>
+            <h2 class="h2-contact">Contact Information</h2>
+            <p class="p-contact">✉️
+                <a href="mailto:julies@prestonid.us">
+                    julies@prestonid.us</a>
+                    <br>
+                ☎️
+                (208) 852-1817
+                <br>
+                <a href="https://www.facebook.com/?hl=EN" target="_blank"><img src="images/rsz_images.png" alt="Facebook" style="width:30px;height:30px;"></a>
+                <a href="https://www.instagram.com/?hl=EN" target="_blank"><img src="images/rsz_instagram-logo-icon-vector-29227998.jpeg" alt="Instagram" style="width:30px;height:30px;"></a>
+                <a href="https://www.twitter.com/?hl=EN" target="_blank"><img src="images/rsz_twitter-logo-icon-voronezh-russia-november-square-black-color-164586157.jpeg" alt="Twitter" style="width:30px;height:30px;"></a>
+            </p> 
+        </div>
         <p>&copy;Forecasting Site | Attributions | Marcus Blanc
             <br>
         <span id="currentdate"></span></p>
     </footer>
     <script defer src="js/getDates.js"></script>
     <script src="js/toggleMenu.js"></script>
+    <script src="js/banner.js"></script>
 </body>
 </html>
