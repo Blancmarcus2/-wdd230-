@@ -40,6 +40,10 @@ header {
     font-size: .9rem;
     text-align: left;
 }
+.active, .active:hover {
+    background-color: skyblue;
+    color: white;
+}
 
 /* Small/Phone View ***************/
 button {
