@@ -172,7 +172,7 @@ h3 {
 .action h3 {
     text-decoration: underline;
 }
-.imgbanSize::before{
+.imgbansize::before{
     content: "Small";
     color: #fff;
     font-size: 50px;

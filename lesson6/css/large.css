@@ -19,7 +19,7 @@
   nav ul li {
       flex: 1 1 100%;
   }
-  .imgbanSize::before{
+  .imgbansize::before{
     content: "Large";
     color: #fff;
     font-size: 50px;
