@@ -26,7 +26,6 @@
     position: absolute;
     top: 17rem;
     right: 650px;
-    image-orientation: right;
     background: radial-gradient(#4567aa, #565456);
     padding: 1.5rem;
     opacity: 0.45;
@@ -34,7 +33,6 @@
   .action {
     position: absolute;
     top: 16rem;
-    image-orientation: left;
     left: 650px;
     float: left;
 	background: radial-gradient(#eee, #4567aa);
