@@ -23,23 +23,32 @@
     content: "Large";
     color: #fff;
     font-size: 50px;
-    position: absolute;
-    top: 17rem;
-    right: 650px;
+    position: relative;
+    top: 6rem;
+    left: 40rem;
     background: radial-gradient(#4567aa, #565456);
     padding: 1.5rem;
     opacity: 0.45;
   }
   .action {
     position: absolute;
-    top: 16rem;
-    left: 650px;
+    top: 18.9rem;
+    left: 13.5rem;
     float: left;
 	background: radial-gradient(#eee, #4567aa);
 	border: 1px solid #000;
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #333;
 	opacity: .9;
+}
+.contentbox-forecast {
+    display: block;
+    position: relative;
+    margin: 0.5px;
+    padding: 15px;
+    background-color: aliceblue;
+    color: #444;
+    font-style: italic;
 }
 .img-article {
         float: right;
