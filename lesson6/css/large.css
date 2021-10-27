@@ -24,16 +24,18 @@
     color: #fff;
     font-size: 50px;
     position: absolute;
-    top: 300px;
-    right: 250px;
+    top: 17rem;
+    right: 650px;
+    image-orientation: right;
     background: radial-gradient(#4567aa, #565456);
     padding: 1.5rem;
     opacity: 0.45;
   }
   .action {
     position: absolute;
-    top: 16em;
-	left: 250px;
+    top: 16rem;
+    image-orientation: left;
+    left: 650px;
     float: left;
 	background: radial-gradient(#eee, #4567aa);
 	border: 1px solid #000;
