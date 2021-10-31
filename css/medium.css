@@ -3,4 +3,8 @@
         float: right;
         width: 200px;
     }
+    h2 {
+        margin-left: 0.5rem;
+        text-decoration: underline;
+    }
 }

@@ -1,16 +1,91 @@
 @media only screen and (min-width: 32.5em) {
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: "New Tegomin", sans-serif;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    main {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        box-sizing: border-box;
+        background-color: #f5f5dc;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 120rem;
+        margin: auto;
+        padding: 0 1.5rem;
+    }
+    .placeholder img {
+        width: 100%;
+        height: 200px;
+        filter: blur(0em);
+        transition:  filter 9s;
+    }
+    .placeholder img[data-src] {
+        filter: blur(0.2em);
+        width: 300px;
+        height: 400px;
+    }
+    .placeholder {
+        box-shadow: 10px 5px 5px 3px #888;
+        border: 2px solid rgba(255, 255, 255, .6);
+        border-radius: .4rem;
+        background-color: white;
+    }
+
+    .image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+    }
+
     header {
+        max-width: 100%;
+        background-color: cyan;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
+    .logo {
+        width: 100%;   
+    }
+
+    h2 {
+        font-size: 20px;
+        font-family: "Inconsolata", monospace;
+        text-align: center;
+        text-decoration: underline;
+    }
+
     nav ul, nav ul.navigation {
         display: flex;
     }
+
     nav ul li {
         flex: 1 1 100%;
     }
+
     nav button {
         display: none;
     }
+
       footer {
         text-align: center;
     }

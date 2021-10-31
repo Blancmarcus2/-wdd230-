@@ -26,3 +26,32 @@ if ('IntersectionObserver' in window) {
         loadImages(img);
     });
 }
+
+
+// let lazyloadimage = document.querySelectorAll("img[data-src]");
+
+// const loadImage = (img) => {
+//   const src = img.getAttribute("data-src");
+//   img.setAttribute("src", src);
+//   img.removeAttribute("data-src");
+// };
+
+// const observer = new IntersectionObserver(
+//   (items, observer) => {
+//     items.forEach((item) => {
+//       if (!item.isIntersecting) return;
+//       else {
+//         loadImage(item.target);
+//         observer.unobserve(item.target);
+//       }
+//     });
+//   },
+//   {
+//     threshold: 0,
+//     rootMargin: "0px 0px 100px 0px",
+//   }
+// );
+
+// lazyloadimage.forEach((img) => {
+//     observer.observe(img);
+// });

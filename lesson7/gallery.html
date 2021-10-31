@@ -3,15 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forecasting Site Document</title>
+    <title>Weather Gallery Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Inconsolata:wght@300&family=Tangerine&display=swap" rel="stylesheet">
     <meta name="description" content="">
+    <link rel="icon" href="../lesson6/images/weather_clouds_cloudy_rain_sunny_icon.png" type="image/x-icon"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="lazyload.css" />
+    <link rel="stylesheet" href="../lesson4/css/small.css" />
+    <link rel="stylesheet" href="../lesson4/css/medium.css" />
+    <link rel="stylesheet" href="../lesson4/css/large.css" />
 </head>
 <body>
-    
+    <div class="container">
+    <header>
+        <picture>
+            <img class="logo" src="../lesson6/images/weather_clouds_cloudy_rain_sunny_icon.png" alt="weather_clouds_cloudy_rain_sunny_icon logo">
+        </picture>
+        <section class="headings">
+            <h1>Forecasting Website</h1>
+            <div class="moto">There is no better place than Preston</div>
+        </section>
+     </header>
+     <nav>
+         <button onclick="toggleMenu()"> &#9776; Menu</button>
+         <ul id ="menu" class="navigation">
+             <li><a href="../index.html">Home</a></li>
+             <li class="active"><a href="#">Preston</a></li>
+             <li><a href="#">Soda Springs</a></li>
+             <li><a href="#">Fish Haven</a></li>
+             <li><a href="#">Storm Center</a></li>
+             <li><a href="../lesson7/gallery.html" target="_blank">Gallery</a></li>
+         </ul>
+     </nav>
+     <main>
+         <h2>Weather Gallery</h2>
+         <div class="image-gallery">
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/beautiful_thunderstorm.jpeg"
+            alt="Lazy load Images">
+            <p>Beautiful Thunderstorm</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/cloud_storm_sky_with_thunderbolt.jpeg"
+            alt="Lazy load Images">
+            <p>Cloud Storm Sky With Thunderbolt</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/Dallas_winter_Storm_2021.jpeg"
+            alt="Lazy load Images">
+            <p>Dallas Winter Storm 2021</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/Difficult_conditions_on_snowy_road.jpeg"
+            alt="Lazy load Images">
+            <p>Difficult Conditions On Snowy Road</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/Lightning_and_heavy_rain.jpeg"
+            alt="Lazy load Images">
+            <p>Lightning And Heavy Rain</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/paddy_field_farming_at_sunrise.jpeg"
+            alt="Lazy load Images">
+            <p>Paddy Field Farming At Sunrise</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/rain_fall_on_the_ground.jpeg"
+            alt="Lazy load Images">
+            <p>Rain Fall On The Ground</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/storm.jpeg"
+            alt="Lazy load Images">
+            <p>Image Of Storm</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/The_changes_of_weather.jpeg"
+            alt="Lazy load Images">
+            <p>The Changes Of Weather</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/transparent_umbrella.jpeg"
+            alt="Lazy load Images">
+            <p>Transparent Umbrella</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/tropical_sea_in_summer.jpeg"
+            alt="Lazy load Images">
+            <p>Tropical Sea In Summer</p>
+        </picture>
+        <picture class="placeholder">
+            <img src="placeholder.png" data-src="images/weather_background.jpeg"
+            alt="Lazy load Images">
+            <p>Image Of Weather Background</p>
+        </picture>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyrightyear"></span> Forecasting Site | Attributions | Marcus Blanc
+            <br>
+        <span id="currentdate"></span></p>
+        <a href="https://www.facebook.com/?hl=EN" target="_blank"><img src="../lesson6/images/rsz_images.png" alt="Facebook" style="width:30px;height:30px;"></a>
+            <a href="https://www.instagram.com/?hl=EN" target="_blank"><img src="../lesson6/images/rsz_instagram-logo-icon-vector-29227998.jpeg" alt="Instagram" style="width:30px;height:30px;"></a>
+            <a href="https://www.twitter.com/?hl=EN" target="_blank"><img src="../lesson6/images/rsz_twitter-logo-icon-voronezh-russia-november-square-black-color-164586157.jpeg" alt="Twitter" style="width:30px;height:30px;"></a>
+    </footer>
+    <script src="lazyload.js"></script>
+    <script src="../lesson6/js/toggleMenu.js"></script>
+    <script src="../lesson6/js/getDates.js"></script>
+    </div>
 </body>
 </html>
