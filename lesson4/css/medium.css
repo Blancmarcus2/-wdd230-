@@ -73,6 +73,13 @@
         text-align: center;
         text-decoration: underline;
     }
+    h6 {
+        font-size: 13px;
+        font-family: "Cormorant Garamond", serif;
+        color:#000;
+        font-size: 1rem;
+        text-align: center;
+        }
 
     nav ul, nav ul.navigation {
         display: flex;
