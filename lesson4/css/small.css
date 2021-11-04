@@ -186,6 +186,11 @@ h2 {
     background-color: white;
 }
 
+.active, .active:hover {
+    background-color: skyblue;
+    color: white;
+}
+
 footer {
     font-size: 15px;
     font-family: "Inconsolata", monospace;

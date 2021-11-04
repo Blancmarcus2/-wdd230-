@@ -29,15 +29,16 @@
          <button onclick="toggleMenu()"> &#9776; Menu</button>
          <ul id ="menu" class="navigation">
              <li><a href="../index.html">Home</a></li>
-             <li class="active"><a href="#">Preston</a></li>
+             <li><a href="lesson6/preston-6.html">Preston</a></li>
              <li><a href="#">Soda Springs</a></li>
              <li><a href="#">Fish Haven</a></li>
              <li><a href="#">Storm Center</a></li>
-             <li><a href="../lesson7/gallery.html" target="_blank">Gallery</a></li>
+             <li class="active"><a href="../lesson7/gallery.html" target="_blank">Gallery</a></li>
          </ul>
      </nav>
      <main>
          <h2>Weather Gallery</h2>
+         <p><span id="days"></span></p>
          <div class="image-gallery">
         <section class="placeholder">
             <img src="placeholder.png" data-src="images/beautiful_thunderstorm.jpeg"
@@ -112,6 +113,7 @@
     <script src="lazyload.js"></script>
     <script src="../lesson6/js/toggleMenu.js"></script>
     <script src="../lesson6/js/getDates.js"></script>
+    <script src="localstorage.js"></script>
     </div>
 </body>
 </html>
