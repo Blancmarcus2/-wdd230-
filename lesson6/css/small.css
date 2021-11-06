@@ -201,26 +201,25 @@ h3 {
 
 .flex-col {
 	flex: 1 1 auto;
-	background-color: #bed;
 }
 .flex-col {
-	border-bottom: 1px solid #333;
-	border-left: 1px solid #333;
+	border-bottom: 1px solid rgb(48, 151, 236);
+	border-left: 1px solid rgb(48, 151, 236);
 	text-align: center;
 }
 .flex-col:hover, td:hover {
 	opacity: 0.75;
-	background-color: black;
+	background-color: yellowgreen;
 	color: white;
 }
 .flex {
-	border-right: 1px solid #333;
+	border-right: 1px solid rgb(48, 151, 236);
 }
 
 .col-head {
 	display: block;
 	padding: 5px;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid ;
 	text-align: center;
 }
 
@@ -238,9 +237,10 @@ h3 {
 
 .col-head,th {
 	font-weight: 700;
-	font-size: 1rem;
-	background-color: black;
-	color: white;
+	font-size: 1.5rem;
+	background-color: #87cefa;
+	color: #000000;
+    text-decoration: wavy;
 }
 .h2-article {
     text-align: left;
