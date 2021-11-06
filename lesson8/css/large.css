@@ -12,7 +12,7 @@
 
 /*----------- HEADER --------------*/
 header {
-    max-width: 100%;
+    max-width: 64rem;
     background-color: cyan;
     padding-top: 5px;
     padding-bottom: 5px;

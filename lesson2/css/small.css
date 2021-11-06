@@ -11,6 +11,7 @@ header, footer{
 }
 
 header {
+  max-width: 100%;
   line-height: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -24,6 +25,7 @@ h2 {
 }
 
 footer {
+  max-width: 100%;
   font-family: "Scheherazade New", serif;
   line-height: 20px;
   margin-bottom: 40px;

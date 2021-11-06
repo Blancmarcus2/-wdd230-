@@ -23,8 +23,12 @@ header {
 }
 
 header img {
-    width: 300px;
-    height: auto;
+    width: 55%;
+    height: 250px;
+    margin: auto;
+    border-image: stretch;
+    border-radius: 5em 0;
+    box-shadow: 1px 18px 16px 1px;
 }
 
 h1 {

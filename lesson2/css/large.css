@@ -23,10 +23,12 @@
   }
   
   header {
-      line-height: 20px;
+    max-width: 64rem;
+    line-height: 20px;
   }
   
   footer {
-      line-height: 5px;
+    max-width: 64rem;
+    line-height: 5px;
   }
   }
