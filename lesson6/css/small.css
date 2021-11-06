@@ -41,7 +41,7 @@ header {
     text-align: left;
 }
 .active, .active:hover {
-    background-color: yellowgreen;
+    background-color: #d3d3d3;
 }
 
 /* Small/Phone View ***************/

@@ -91,7 +91,7 @@ nav a {
 	}
 
 .active, .active:hover {
-    background-color: yellowgreen;
+    background-color: #d3d3d3;
     }
 /*----------- MAIN --------------*/
 main {
@@ -117,11 +117,19 @@ h2 {
     font-size: 20px;
     font-family: "Inconsolata", monospace;
     text-align: center;
+    text-decoration: underline;
 }
 h3 {
     font-size: 15px;
     font-family: "Inconsolata", monospace;
     text-align: center;
+}
+
+.storm img {
+    width: 100%;
+    height: 300px;
+    border-radius: 2rem 2rem 2rem 2rem;
+	padding: 0.25rem;
 }
 
 p {

@@ -38,14 +38,17 @@
     </nav>
     <main>
         <h2>Report A Storm</h2>
+        <div class="storm">
+            <img src="images/wdd230_image_stormcenter.jpeg" alt="photo">
+        </div>
         <form method="get" action="thanks.html">
             <fieldset>
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top">Full Name* <input type="text" name="fname" required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="user@gmail.com"></label>
-                <label class="top">Phone Number* <input type="tel" name="phone" placeholder="###-###-####" required></label>
-                <label class="top">Zip Code* <input type="number" id="myText" name="zip_code" placeholder="12345" required></label>
+                <label class="top" for="name">Full Name* <input type="text" id="name" name="name" pattern="[A-Za-z .-]{5,30}" placeholder="MBlanc" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="user@email.com"></label>
+                <label class="top">Phone Number* <input type="tel" name="phone" pattern="[0-9 (.-)]{7,14}" placeholder="###-###-####" required></label>
+                <label class="top">Zip Code* <input type="number" id="myText" name="zip_code" pattern="(\d{5}([\-]\d{4})?)" placeholder="12345" required></label>
             </fieldset>
 
             <fieldset>
@@ -63,7 +66,7 @@
 
                 <label class="top1" for="rating">Storm Severity
                     <br>(range value 1 to 10) &nbsp;&nbsp;&nbsp;
-                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">1</span></label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
                     <datalist id="tickmarks">
                         <option value="1">
                         <option value="2">
