@@ -61,7 +61,8 @@
                             <option value="Tornado">
                         </datalist>
 
-                <label class="flexly" for="rating">Storm Severity(1 to 10) &nbsp;&nbsp;&nbsp;
+                <label class="top1" for="rating">Storm Severity
+                    <br>(range value 1 to 10) &nbsp;&nbsp;&nbsp;
                 <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">1</span></label>
                     <datalist id="tickmarks">
                         <option value="1">
@@ -93,7 +94,7 @@
 
             <fieldset>
                 <legend>Additional Information Or Comments</legend>
-                <label class="top"><textarea id="msg" name="comment" rows="10" cols="50" placeholder="Enter text here..."></textarea></label>
+                <textarea class="top" id="msg" name="comment" rows="10" cols="38" placeholder="Enter text here..."></textarea>
             </fieldset>
 
             <input type="submit" value="Send Report Storm" class="submitBtn">
