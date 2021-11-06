@@ -37,7 +37,7 @@
         </ul>
     </nav>
     <main>
-        <h1>Report A Storm</h1>
+        <h2>Report A Storm</h2>
         <form method="get" action="thanks.html">
             <fieldset>
             <fieldset>
@@ -45,14 +45,14 @@
                 <label class="top">Full Name* <input type="text" name="fname" required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
                 <label class="top">Phone Number* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top" for="zip">Zip Code* <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label>
+                <label class="top">Zip Code* <input type="text" id="myText" name="zip_code" required></label>
             </fieldset>
 
             <fieldset>
                 <legend>Storm Information</legend>
                 <label class="top">Storm Date <input type="date" name="completeDate"></label>
                 
-                <label class="top" for="type">Storm Type <input list="types" name="type" id="type">
+                <label class="top" for="type">Storm Type <input list="types" name="type" id="type"></label>
                         <datalist id="types">
                             <option value="Flash Flood">
                             <option value="Hail">
@@ -60,12 +60,9 @@
                             <option value="Thunderstorm">
                             <option value="Tornado">
                         </datalist>
-            </fieldset>
 
-            <fieldset>
-                <legend>Current Range Value And Region</legend>
                 <label class="flexly" for="rating">Storm Severity(1 to 10) &nbsp;&nbsp;&nbsp;
-                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">0</span></label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">1</span></label>
                     <datalist id="tickmarks">
                         <option value="1">
                         <option value="2">
@@ -81,23 +78,22 @@
     
                 <label class="top">Storm Region
                         <select name="region">
-                            <option value="">Please Select &#9662</option>
-                        <option value="preston">Preston</option>
-                        <option value="springs">Soda Springs</option>
-                        <option value="haven">Fish Haven</option>
+                            <option value="">Please Select &#9662; </option>
+                            <option value="preston">Preston</option>
+                            <option value="springs">Soda Springs</option>
+                            <option value="haven">Fish Haven</option>
                         </select>
-                    </fieldset>
-                        
-                    <fieldset>
-                        <legend>User In-Danger Level</legend>
-                        <label class="sbs"><input type="radio" name="radio" value="yes"> Yes</label>
-                        <label class="sbs"><input type="radio" name="radio" value="maybe"> Maybe</label>
-                        <label class="sbs"><input type="radio" name="radio" value="no"> No</label>
-                   </fieldset>
+                        </label>
+
+                <div>User In-Danger Level</div>
+                <label class="sbs"><input type="radio" name="radio" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="radio" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="radio" value="no"> No</label>
+            </fieldset>
 
             <fieldset>
                 <legend>Additional Information Or Comments</legend>
-                <label class="top" for="msg"><textarea id="msg" rows="10" cols="50" name="comment" form="usrform" placeholder="Enter text here..."></textarea></label>
+                <label class="top" for="msg"><textarea id="msg" rows="10" cols="50" name="comment" placeholder="Enter text here..."></textarea></label>
             </fieldset>
 
             <input type="submit" value="Send Report Storm" class="submitBtn">
@@ -109,9 +105,7 @@
                 <a href="https://www.facebook.com/?hl=EN" target="_blank"><img src="images/rsz_images.png" alt="Facebook" style="width:30px;height:30px;"></a>
                 <a href="https://www.instagram.com/?hl=EN" target="_blank"><img src="images/rsz_instagram-logo-icon-vector-29227998.jpeg" alt="Instagram" style="width:30px;height:30px;"></a>
                 <a href="https://www.twitter.com/?hl=EN" target="_blank"><img src="images/rsz_twitter-logo-icon-voronezh-russia-november-square-black-color-164586157.jpeg" alt="Twitter" style="width:30px;height:30px;"></a>
-            </p> 
-        </div>
-        <p>&copy;2021<span id="copyrightyear"></span> Forecasting Site | Attributions | Marcus Blanc
+        <p>&copy;<span id="copyrightyear"></span> Forecasting Site | Attributions | Marcus Blanc
             <br>
         <span id="currentdate"></span></p>
     </footer>
