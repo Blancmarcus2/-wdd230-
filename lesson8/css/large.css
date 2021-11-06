@@ -1,0 +1,45 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+    max-width: 100%;
+    background-color: cyan;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------- NAVIGATION --------------*/
+nav ul {
+    display: flex;
+}
+nav ul li {
+    flex: 1 1 100%;
+}
+
+
+/*----------- MAIN --------------*/
+
+form label.sbs {
+    padding: .4rem 0;
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    text-align: center;
+  }
+} /* end of media query */

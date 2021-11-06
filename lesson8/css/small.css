@@ -1,0 +1,208 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+header {
+    max-width: 100%;
+    background-color: cyan;
+    padding: .5rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.moto {
+    font-style: italic;
+    color: #000000;
+    margin-left: 20px;
+    font-size: .9rem;
+    text-align: left;
+}
+
+/*----------- NAVIGATION --------------*/
+button {
+    background-color:#000000;
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: "Inconsolata", monospace;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+    font-size: 1rem;
+	background-color: cyan;
+    text-shadow: 10px 5px 5px black;
+    text-align: center;
+    box-shadow: 10px 5px 5px white;
+}
+nav button {
+    margin: 0.5rem 5%;
+    font-size: 1rem;
+    background-color:#00ffff;
+    color:#000;
+    border: none;
+}
+.navigation{
+	display: block;
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav ul.navigation {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+.navigation {
+	display: flex;
+	}
+
+nav a {
+	text-align: center;
+	}
+
+.active, .active:hover {
+    background-color: skyblue;
+    color: white;
+    }
+/*----------- MAIN --------------*/
+main {
+    font-family: New Tegomin, sans-serif;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+a {
+    color:#000;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;   
+    }
+
+h1 {
+    font-size: 25px;
+    font-family: New Tegomin, sans-serif;
+    text-align: center;
+}
+    
+h2 {
+    font-size: 20px;
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+}
+h3 {
+    font-size: 15px;
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    text-decoration: wavy;
+}
+
+/* ------------ FORM ------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    font-size: 15px;
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+    background-color: cyan;
+    padding: 5px;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

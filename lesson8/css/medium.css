@@ -1,0 +1,36 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 32.5em) {
+
+
+    /*----------- BODY --------------*/
+    
+    
+    
+    /*----------- HEADER --------------*/
+    header {
+        text-align: center;
+    }
+    
+    
+    /*----------- NAVIGATION --------------*/
+        nav ul, nav ul.navigation {
+            display: flex;
+        }
+        nav ul li {
+            flex: 1 1 100%;
+        }
+        nav button {
+            display: none;
+        }
+    
+    
+    /*----------- MAIN --------------*/
+    
+    
+    
+    /*----------- FOOTER --------------*/
+    footer {
+        text-align: center;
+    }
+        
+} /* end of media query */
