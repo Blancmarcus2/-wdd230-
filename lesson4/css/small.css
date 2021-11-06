@@ -33,7 +33,7 @@ main {
     padding: 0.5rem;
     margin: 0.5rem;
     box-sizing: border-box;
-    background-color: #f5f5dc;
+    background-color: #87ceeb;
 }
 
 header {
@@ -187,8 +187,7 @@ h2 {
 }
 
 .active, .active:hover {
-    background-color: skyblue;
-    color: white;
+    background-color: yellowgreen;
 }
 
 footer {

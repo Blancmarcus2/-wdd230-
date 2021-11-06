@@ -3,11 +3,11 @@ main {
     padding: 0.5rem;
     margin: 0.5rem;
     box-sizing: border-box;
-    background-color: #f5f5dc;
+    background-color: #87ceeb;
 }
 header {
     max-width: 100%;
-    background-color: cyan;
+    background-color: #00ffff;
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
@@ -41,8 +41,7 @@ header {
     text-align: left;
 }
 .active, .active:hover {
-    background-color: skyblue;
-    color: white;
+    background-color: yellowgreen;
 }
 
 /* Small/Phone View ***************/
