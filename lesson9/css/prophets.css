@@ -1,0 +1,95 @@
+/*styling for small view*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "New Tegomin", sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    justify-items: center;
+    align-content: center;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+main {
+    border: solid 1rem white;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: navy;
+    background-color: white;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: navy;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: lightslategrey;
+    border: solid 1px black;
+    box-shadow: 0.7em 0.6em 0.5em 0.5em;
+    border-style: solid;
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    margin-left: 1rem;
+    max-width: 90%;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 75%;
+    height: 100%;
+}
+
+footer {
+    background-color: cyan;
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 1.5rem;
+}
+
+/* styling for medium view*/
+@media only screen and (min-width: 32.5em) {
+    div.cards {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    section {
+        margin-right: 1.5rem;
+    }
+    footer {
+        font-size: 0.9em;
+    }
+}
+/* styling for large view*/
+@media only screen and (min-width: 60em) {
+    div.cards {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    section {
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
