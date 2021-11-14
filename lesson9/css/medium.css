@@ -1,0 +1,55 @@
+@media only screen and (min-width: 32.5em) {
+    header {
+        text-align: center;
+    }
+    nav ul, nav ul.navigation {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    nav button {
+        display: none;
+    }
+
+    .hometown_cards section {
+        max-width: 600px;
+        margin: .5rem;
+        border: 1px solid #bbb;
+        padding: 0 0 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .hometown_cards h2, p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hometown_cards img{
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .hometown_cards {
+        padding: 30px 30px;
+    }
+
+
+    .h2-contact {
+        text-align: right;
+    }
+    .p-contact {
+        text-align: right;
+    }
+    .img-contact {
+        float: left;
+        width: 400px;
+        height: 150px;
+    }
+      footer {
+        text-align: center;
+    }
+}
