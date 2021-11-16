@@ -11,37 +11,12 @@
     nav button {
         display: none;
     }
-
-    .hometown_cards section {
-        max-width: 600px;
-        margin: .5rem;
-        border: 1px solid #bbb;
-        padding: 0 0 20px 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-
-    .hometown_cards h2, p {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .hometown_cards img{
-        max-width: 100%;
-        height: auto;
-        padding: 0;
-    }
-
-    .hometown_cards {
-        padding: 30px 30px;
-    }
-
-
     .h2-contact {
+        display: block;
         text-align: right;
     }
     .p-contact {
+        display: block;
         text-align: right;
     }
     .img-contact {
@@ -50,6 +25,33 @@
         height: 150px;
     }
       footer {
+        display: block;
         text-align: center;
+    }
+/* medium screen view */    
+    .hometown_cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  
+    .hometown_cards img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .hometown_cards p {
+        grid-column: 1;
+        grid-row: 1;
+        padding: .75rem;
+    }
+    
+    .hometown_cards img {
+        width: 50%;
+        height: auto;
+        padding:0;
+    }
+    .hometown_cards {
+        background-color:#87ceeb;
+        color:#fff;
     }
 }

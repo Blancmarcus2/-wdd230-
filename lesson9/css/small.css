@@ -1,10 +1,3 @@
-main {
-    font-family: New Tegomin, sans-serif;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    box-sizing: border-box;
-    background-color: #87ceeb;
-}
 header {
     max-width: 100%;
     background-color: #00ffff;
@@ -14,12 +7,22 @@ header {
     justify-content: left;
 }
 
+main {
+    font-family: "New Tegomin", sans-serif;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+    background-color: #87ceeb;
+}
+
 .logo {
     max-width: 100px;
 }
+
 .banner {
     text-align: right;
 }
+
 .headings {
     display: flex;
     flex-direction: column;
