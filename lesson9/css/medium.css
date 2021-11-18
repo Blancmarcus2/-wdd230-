@@ -21,7 +21,7 @@
     }
     .img-contact {
         float: left;
-        width: 400px;
+        width: 60%;
         height: 150px;
     }
       footer {
@@ -29,29 +29,66 @@
         text-align: center;
     }
 /* medium screen view */    
-    .hometown_cards {
+    div.hometown_cards section {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-  
-    .hometown_cards img {
+
+    div.hometown_cards section#town1 h2 {
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         grid-column: 1;
-        grid-row: 1;
+        position: relative;
+        top: 0.5rem;
+    }
+    div.hometown_cards section#town1 p {
+        grid-column: 1;
+        position: relative;
+        top: 0.5rem;
+    }
+    div.hometown_cards section#town1 img {
+        grid-column: 2;
+        padding-right: 2rem;
+        position: relative;
+        bottom: 10rem;
+    }
+
+    div.hometown_cards section#town2 h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        grid-column: 2;
+        position: relative;
+        top: 0.5rem;
+    }
+    div.hometown_cards section#town2 p {
+        grid-column: 2;
+        position: relative;
+        top: 0.5rem;
+        margin-left: 1.5rem;
+    }
+    div.hometown_cards section#town2 img {
+        grid-column: 1;
+        padding-left: 2rem;
+        position: relative;
+        bottom: 12.5rem;
     }
     
-    .hometown_cards p {
+    div.hometown_cards section#town3 h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
         grid-column: 1;
-        grid-row: 1;
-        padding: .75rem;
+        position: relative;
+        top: 0.5rem;
     }
-    
-    .hometown_cards img {
-        width: 50%;
-        height: auto;
-        padding:0;
+    div.hometown_cards section#town3 p {
+        grid-column: 1;
+        position: relative;
+        top: 0.5rem;
     }
-    .hometown_cards {
-        background-color:#87ceeb;
-        color:#fff;
+    div.hometown_cards section#town3 img {
+        grid-column: 2;
+        padding-right: 2rem;
+        position: relative;
+        bottom: 10rem;
     }
 }

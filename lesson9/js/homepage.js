@@ -6,13 +6,13 @@ fetch(requestURL)
     })
     .then(function(jsonObject) {
         const towns = jsonObject["towns"];
-        let town = ["Fish Haven", "Preston", "Soda Springs"];
+        let town = ["Preston", "Soda Springs", "Fish Haven"];
         
         towns.forEach((towns) => {
             if (
-                towns.name === "Fish Haven" ||
+                towns.name === "Preston" ||
                 towns.name === "Soda Springs" ||
-                towns.name === "Preston"
+                towns.name === "Fish Haven"
             ) {
                 let townCard = document.createElement("section");
                 let townName = document.createElement("h2");
@@ -42,13 +42,13 @@ fetch(requestURL)
                 image.setAttribute("alt", `Photo of ${towns.name}`);
                 townCard.appendChild(image);
                 
-                if (towns.name === "Fish Haven") {
+                if (towns.name === "Preston") {
                     townCard.setAttribute("id", "town1");
                     townCard.appendChild(townOrder);
-                } else if (towns.name === "Preston") {
+                } else if (towns.name === "Soda Springs") {
                     townCard.setAttribute("id", "town2");
                     townCard.appendChild(townOrder);
-                } else if (towns.name === "Soda Springs") {
+                } else if (towns.name === "Fish Haven") {
                     townCard.setAttribute("id", "town3");
                     townCard.appendChild(townOrder);
                 }
