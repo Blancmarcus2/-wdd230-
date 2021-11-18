@@ -20,9 +20,9 @@
       flex: 1 1 100%;
   }
   .contentbox-hero img {
-    width: 100% auto;
+    width: 100%;
     height: 400px;
-    aspect-ratio: attr(width) / attr(height);
+
   }
   .h2-contact {
       text-align: right;
