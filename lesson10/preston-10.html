@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" /> 
+    <script src="js/forecast.js"></script>
 </head>
 <body>
     <header>
@@ -29,8 +30,8 @@
     <nav>
         <button onclick="toggleMenu()"> &#9776; Menu</button>
         <ul id ="menu" class="navigation">
-            <li class="active"><a href="../lesson9/index.html" target="_blank">Home</a></li>
-            <li><a href="../lesson6/preston-6.html" target="_blank">Preston</a></li>
+            <li><a href="../lesson9/index.html" target="_blank">Home</a></li>
+            <li class="active"><a href="../lesson10/preston-10.html" target="_blank">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="../lesson8/stormcenter.html" target="_blank">Storm Center</a></li>
@@ -61,11 +62,34 @@
             </section>
             </div>
         <h3>5 Day Forecast</h3>
-        <p><span id="dayofweek1"></span> : <span id="forecast1">&deg; F</span></p>
-        <p><span id="dayofweek2"></span> : <span id="forecast2">&deg; F</span></p>
-        <p><span id="dayofweek3"></span> : <span id="forecast3">&deg; F</span></p>
-        <p><span id="dayofweek4"></span> : <span id="forecast4">&deg; F</span></p>
-        <p><span id="dayofweek5"></span> : <span id="forecast5">&deg; F</span></p>
+        <div id="forecast">
+            <div class="days">
+              <p class="weekday" id="day1"></p>
+              <p class="icon"><img src="./images/placeholder-icon.png" alt="" id="img1"></p>
+              <p class="current-temp"><span id="day1Temp"></span> &deg;F</p>
+            </div>
+            <div class="days">
+              <p class="weekday" id="day2"></p>
+              <p class="icon"> <img src="placeholder-icon.png" alt="" id="img2"></p>
+              <p class="current-temp"><span id="day2Temp"></span> &deg;F</p>
+            </div>
+            <div class="days">
+              <p class="weekday" id="day3"></p>
+              <p class="icon"> <img src="placeholder-icon.png" alt="" id="img3"></p>
+              <p class="current-temp"><span id="day3Temp"></span> &deg;F</p>
+            </div>
+            <div class="days">
+              <p class="weekday" id="day4"></p>
+              <p class="icon"><img src="placeholder-icon.png" alt="" id="img4"></p>
+              <p class="current-temp"><span id="day4Temp"></span> &deg;F</p>
+            </div>
+            <div class="days">
+              <p class="weekday" id="day5"></p>
+              <p class="icon"><img src="placeholder-icon.png" alt="" id="img5"></p>
+              <p class="current-temp"><span id="day5Temp"></span> &deg;F</p>
+            </div>
+          </div>
+
         <div class="contentbox-article">
             <img class="img-article" src="images/istockphoto-869662664-612x612.jpeg" alt="photo">
         <h2 class="h2-article">Flags left as ‘thank you gift’ for medical workers</h2>
@@ -113,7 +137,6 @@
                 families: ["New Tegomin"]
             }
         })
-    </script>
-    <script defer src="js/forecast.js"></script>
+    </script>  
 </body>
 </html>

@@ -1,16 +1,29 @@
-fetch(apiURL)
-  .then(response => response.json())
-  .then(jsObject => {
-      console.log(jsObject);
+//Get the 5 days of the week
+const daysShort = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-      const six = jsObject.list.filter(x => x.dt_text.includes('18:00:00'));
-      
-      const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-      let day = 0;
-      six.forEach(forecast => {
-         let thedate = new Date(forecast.dt_txt);
-         document.querySelector(`#dayofweek${day + 1}`).textContent = weekdays[thedate.getDay()];
-         document.querySelector(`#forecast${day + 1}`).textContent = forecast.main.temp;
-         day++;
+function CheckDay(day) {
+    if (day + d.getDay() > 6) {
+        return day + d.getDay() - 7;
+    } else {
+        return day + d.getDay();
+    }
+}
+
+for (i = 0; i < 5; i++) {
+    document.getElementById(`day${[i]}`).textContent = forecast[i];
+}
+
+//Get the temperatures, icons and description for the next 5 days
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&exclude=minutely,hourly,alerts&units=imperial&appid=7ac96d32143254c1d79b1decba10b887';
+fetch(forecastURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        const listForecast = jsObject.list.filter((d) => d.dt_txt.includes("18:00:00"));
+        for (let i = 0; i < 5; i++) {
+            document.querySelector(`#temp${[i]}`).innerHTML = `${listForecast[i].main.temp.toFixed(1)} °F`;
+            const images = `http://openweathermap.org/img/w/${listForecast[i].weather[0].icon}.png`;
+            const description = listForecast[i].weather[0].description;
+            document.querySelector(`#img${[i]}`).setAttribute("src", images);
+            document.querySelector(`#img${[i]}`).setAttribute("alt", description);
+        }
     });
-}); 
