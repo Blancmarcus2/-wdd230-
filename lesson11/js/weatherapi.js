@@ -1,3 +1,29 @@
+//* Get data from BYU-I JSON and create functions to write the data
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+    var townEvents = request.response;
+    townPreston(townEvents);
+}
+//* Function to write Preston data onto page; loop through JSON to find town name, then write header and events in townEventsPreston article.
+function townPreston(jsonObj) {
+    var towns = jsonObj['towns']
+    var i = 0;
+    var name = towns[i].name;
+    for (i = 0; i < towns.length; i++) {
+        var name = towns[i].name;
+        if (name == "Preston") {
+            var eventsString = towns[i].events.join(', ');
+            document.getElementById("townEventsPreston").innerHTML = "<h2>Preston Events</h2> " + eventsString;
+        }
+    }
+}
+
+
+
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=7ac96d32143254c1d79b1decba10b887`;
 
 fetch(apiURL)

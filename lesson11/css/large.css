@@ -49,13 +49,14 @@
         height: 150px;
     }
 .h2-contact {
-    text-align: right;
+    text-align: left;
 }
 .p-contact {
+    text-align: left;
     padding-left: 46.5em;
 }
 .img-contact {
-    float: left;
+    align-items: center;
     width: 500px;
     height: 150px;
 }

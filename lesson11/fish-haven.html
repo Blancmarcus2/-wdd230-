@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marcus Blanc">
-    <title>OpenWeatherMap Weather API Activity</title>
+    <title>Fish Haven</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Inconsolata:wght@300&family=Tangerine&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" /> 
-    <script src="js/forecast.js"></script>
+    <script src="js/forecastfish.js"></script>
 </head>
 <body>
     <header>
@@ -23,23 +23,22 @@
        </picture>
        <section class="headings">
            <h1>Forecasting Website</h1>
-           <div class="moto">There is no better place than Preston</div>
-           <div id="banner">Friday</div>
+           <div class="moto">This is Fish Heaven.</div>
        </section>
     </header>
     <nav>
         <button onclick="toggleMenu()"> &#9776; Menu</button>
         <ul id ="menu" class="navigation">
             <li><a href="../lesson9/index.html" target="_blank">Home</a></li>
-            <li class="active"><a href="../lesson10/preston-10.html" target="_blank">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson11/index.html" target="_blank">Preston</a></li>
+            <li><a href="../lesson11/soda-springs.html" target="_blank">Soda Springs</a></li>
+            <li class="active"><a href="../lesson11/fish-haven.html">Fish Haven</a></li>
             <li><a href="../lesson8/stormcenter.html" target="_blank">Storm Center</a></li>
             <li><a href="../lesson7/gallery.html" target="_blank">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Preston Idaho</h2>
+        <h2>Fish Haven</h2>
         <div class="contentbox-hero">
             
         <div class="contentbox-hero-img">
@@ -47,9 +46,12 @@
             <!-- <source srcset="images/wdd230_image_franklinoriginal_small.jpeg" media="(min-width: 300px) and (max-width: 599px)">
 			<source srcset="images/wdd230_image_franklinoriginal_medium.jpeg" media="(min-width: 600px) and (max-width: 799px)">
 			<source srcset="images/wdd230_image_franklinoriginal.jpeg" media="(min-width: 800px) and (max-width: 1200px)"> -->
-            <img src="images/wdd230_image_franklinoriginal.jpeg" alt="Hero Image / Weather Summary">
+            <img src="images/fishhaven.jpg" alt="Hero Image / Weather Summary">
         </section>
         </div>
+        <section>
+            <article id="townEventsFishHaven"></article>
+            </section>
             <section class="action">
                 <h2>
                     Weather Summary
@@ -65,34 +67,44 @@
         <div id="forecast"></div>
 
         <div class="contentbox-article">
-            <img class="img-article" src="images/istockphoto-869662664-612x612.jpeg" alt="photo">
-        <h2 class="h2-article">Flags left as ‘thank you gift’ for medical workers</h2>
-        <p class="p-article">OGDEN – Jill Gebert planted 200 American flags
-            around Ogden Regional Medical Center on Wednesday
-            to thank medical workers she credits with saving
-            her mother’s life from COVID-19. On Sept. 4, Gebert’s mother,
-            Marie Bosworth, started experiencing heart palpitations and coughing.
-            She was sent to Logan Regional Medical Center and was monitored
-            for six hours before being sent home with instructions to return
-            if she felt worse.
-        </p>   
+            <img class="img-article" src="../lesson7/rsz_pexels-eberhard-grossgasteiger-2098405.jpeg" alt="photo">
+        <h2 class="h2-article">Native American Tribes & the Indian History in Fish Haven, Idaho</h2>
+        <article>
+        <p class="p-article">Long before the terms Native American or Indian were necessary,
+            the tribes were spread throughout the Americas. Before any white man set foot on this land,
+            it was settled by the forefathers of bands we now call Sioux, or Cherokee, or Iroquois.
+            <br>
+
+            <br>For centuries, the American Indian developed its traditions and legacy without disturbance. And that history is captivating.
+            <br>
+            
+            <br>From Mayan and Incan ruins, from the mounds left in the central and southern regions of what is currently the U.S.
+            we have learned plenty. It’s a narrative of beautiful craft work and deep spirituality.
+            Archaeologists have unearthed highly elaborate structures and public works.
+            <br>
+            
+            <br>While there was unavoidable tribal conflict, that was just a slight blemish in the history of our ancestors.
+            They were at peace with this beautiful continent and intensely connected to nature.
+        </p>
+        <a class="link" href="https://americanindiancoc.org/native-american-tribes-the-indian-history-in-fish-haven-idaho/" target="_blank">CONTINUE READING FISH HAVEN IDAHO...</a>
+        </article>   
         </div>
     </main>
     <footer>
         <div class="contentbox-contact">
-            <a href="https://www.google.com/search?q=preston+idaho+google+maps&rlz=1C5CHFA_enHT955HT955&oq=preston+idaho+map&aqs=chrome.1.69i57j0i19i22i30l3.22818j0j7&sourceid=chrome&ie=UTF-8#" target="_blank">
-                <img class="img-contact" src="images/preston_map.png" alt="preston_map"></a>
+            <a href="https://www.google.com/search?q=google+map+fish+haven+idaho&rlz=1C5CHFA_enHT955HT955&sxsrf=AOaemvL53K9WTkmFR_C44BPW1Mun5jglUg%3A1637973275754&ei=G32hYaO_LY2SwbkPkKSOiAI&ved=0ahUKEwjjuIL6pbf0AhUNSTABHRCSAyEQ4dUDCA4&uact=5&oq=google+map+fish+haven+idaho&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BAgAEA06CAgAEAgQBxAeOggIABAIEA0QHkoECEEYAFDTA1j-HmC1ImgBcAJ4AYAB8QOIAcwPkgEHMC45LjQtMZgBAKABAcgBB8ABAQ&sclient=gws-wiz#" target="_blank">
+                <img class="img-contact" src="images/fishhavenmap.png" alt="fish_haven_map"></a>
             <h2 class="h2-contact">Contact Information</h2>
-            <p class="p-contact">✉️
+            <p class="p-contact">&#9993;
                 <a href="mailto:julies@prestonid.us">
                     julies@prestonid.us</a>
                     <br>
-                ☎️
+                &#9742;
                 (208) 852-1817
                 <br>
-                <a href="https://www.facebook.com/?hl=EN" target="_blank"><img src="images/rsz_images.png" alt="Facebook" style="width:30px;height:30px;"></a>
-                <a href="https://www.instagram.com/?hl=EN" target="_blank"><img src="images/rsz_instagram-logo-icon-vector-29227998.jpeg" alt="Instagram" style="width:30px;height:30px;"></a>
-                <a href="https://www.twitter.com/?hl=EN" target="_blank"><img src="images/rsz_twitter-logo-icon-voronezh-russia-november-square-black-color-164586157.jpeg" alt="Twitter" style="width:30px;height:30px;"></a>
+                <a href="https://www.facebook.com/?hl=EN" target="_blank"><img src="../lesson10/images/rsz_images.png" alt="Facebook" style="width:30px;height:30px;"></a>
+                <a href="https://www.instagram.com/?hl=EN" target="_blank"><img src="../lesson10/images/rsz_instagram-logo-icon-vector-29227998.jpeg" alt="Instagram" style="width:30px;height:30px;"></a>
+                <a href="https://www.twitter.com/?hl=EN" target="_blank"><img src="..lesson10/images/rsz_twitter-logo-icon-voronezh-russia-november-square-black-color-164586157.jpeg" alt="Twitter" style="width:30px;height:30px;"></a>
             </p> 
         </div>
         <p>&copy;<span id="copyrightyear"></span> Forecasting Site | Attributions | Marcus Blanc
@@ -103,7 +115,7 @@
     <script src="js/toggleMenu.js"></script>
     <script src="js/banner.js"></script>
     <script src="js/windchill.js"></script>
-    <script src="js/weatherapi.js"></script>
+    <script src="js/weatherapifish.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
