@@ -1,5 +1,5 @@
 // Weather API
-const cityID = 'lat=42.036781&lon=-111.395362'
+const cityID = '5585010'
 const key = '7ac96d32143254c1d79b1decba10b887'
 const units = 'imperial'
 const cnt = 5
