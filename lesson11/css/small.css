@@ -164,7 +164,7 @@ h3 {
     position: absolute;
     top: 13rem;
     left: 2.5rem;
-    align-items: left;
+    align-items: center;
     width: 20%;
     height: auto;
 	background: radial-gradient(#eee, #008000);

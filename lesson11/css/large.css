@@ -24,7 +24,7 @@
    position: absolute;
    top: 13.5rem;
    left: 12rem;
-   align-items: left;
+   align-items: center;
    width: 15%;
    height: auto;
 	background: radial-gradient(#eee, #008000);
