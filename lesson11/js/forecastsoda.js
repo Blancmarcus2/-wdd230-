@@ -42,7 +42,7 @@ function forecast(data) {
             img.alt = "Forecast weather icon"
             // Create p
             p = document.createElement("p")
-            p.innerHTML = `High: ${Math.round(day.main.temp_max)} &#8457;`
+            p.innerHTML = `${Math.round(day.main.temp_max)} &#8457;`
             // Append img and p to div
             div.append(img, p)
             // Append heading to header

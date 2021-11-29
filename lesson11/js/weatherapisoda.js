@@ -32,7 +32,7 @@ fetch(apiURL)
        console.log(jsObject);
        
        document.querySelector("#currentweather").textContent = jsObject.weather[0].description;
-       const temperature = jsObject.main.temp.toFixed(0);
+       const temperature = jsObject.main.temp_max.toFixed(0);
        document.querySelector("#hightemperature").textContent = temperature;
        document.querySelector("#humid").textContent = jsObject.main.humidity.toFixed(0);
        const windspeed = jsObject.wind.speed.toFixed(0);

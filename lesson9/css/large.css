@@ -25,16 +25,21 @@
 
   }
   .h2-contact {
-      text-align: right;
-  }
-  .p-contact {
-      padding-left: 46.5em;
-  }
-  .img-contact {
-      float: left;
-      width: 500px;
-      height: 150px;
-  }
+    text-align: left;
+    margin: 0;
+ }
+ .p-contact {
+    text-align: left;
+    margin: 0;
+ }
+ .img-contact {
+   width: 40%;
+   height: 130px;
+   align-items: center;
+   position: relative;
+   bottom: 8rem;
+   left: 15rem;
+ }
   footer {
     text-align: center;
   }
