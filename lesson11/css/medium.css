@@ -16,7 +16,7 @@
         position: absolute;
         top: 17rem;
         left: 4rem;
-        align-self: left;
+        align-items: left;
         width: 30%;
         height: auto;
         background: radial-gradient(#eee, #008000);
